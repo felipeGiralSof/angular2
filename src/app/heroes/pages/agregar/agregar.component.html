@@ -1,0 +1,41 @@
+<div class="content">
+    <h1 style="text-align: center;">Agregar Recarga</h1>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="formu">
+        <label for="nombre">Nombre</label>
+        <input 
+            name="nombre"
+            formControlName="name"
+            type="text" 
+        />
+    
+        <label for="correo">Correo</label>
+        <input 
+            name="correo"
+            formControlName="correo"
+            type="email" 
+        />
+    
+        <label for="telefono">Telefono</label>
+        <input 
+            name="telefono"
+            formControlName="telefono"
+            type="text"
+        />
+
+        <label for="operador">Operador</label>
+        <input 
+            name="operador"
+            formControlName="operador"
+            type="text"
+        />
+    
+        <label for="valor">Valor</label>
+        <input 
+            name="valor"
+            formControlName="valor"
+            type="text" 
+        />
+        <br>
+        <button type="submit" mat-raised-button color="warn">Enviar</button>
+      </form>
+</div>
