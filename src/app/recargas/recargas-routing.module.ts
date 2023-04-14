@@ -26,4 +26,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class HeroesRoutingModule { }
+export class RecargasRoutingModule { }

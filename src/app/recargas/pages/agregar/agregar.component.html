@@ -1,0 +1,37 @@
+<div class="content">
+    <h1 style="text-align: center;">AGREGAR RECARGA</h1>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="formu">
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Digite su Nombre</mat-label>
+            <input type="text" matInput placeholder="Andres.." formControlName="name" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Digite su email</mat-label>
+            <input type="email" matInput placeholder="pat@example.com" formControlName="correo" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Digite su Celular</mat-label>
+            <input type="text" matInput placeholder="3124545..." formControlName="telefono" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Operadores</mat-label>
+            <mat-select formControlName="operador">
+              <mat-option value="Movistar">Movistar</mat-option>
+              <mat-option value="Claro">Claro</mat-option>
+              <mat-option value="Tigo">Tigo</mat-option>
+              <mat-option value="Uff">Uff</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Digite Valor Recarga</mat-label>
+            <input type="number" matInput placeholder="$$$$$" formControlName="valor" required>
+        </mat-form-field>
+        <br>
+        <button type="submit" mat-raised-button color="primary">Enviar</button>
+      </form>
+</div>

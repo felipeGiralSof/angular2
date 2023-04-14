@@ -1,4 +1,3 @@
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 
@@ -8,17 +7,12 @@ const routes : Routes = [
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'heroes',
-    loadChildren: () => import('./heroes/heroes.module').then(m => m.HeroesModule)
-  },
-  {
-    path:'404',
-    component: ErrorPageComponent
+    path: 'recargas',
+    loadChildren: () => import('./recargas/recargas.module').then(m => m.RecargasModule)
   },
   {
     path: '**',
-    //component: ErrorPageComponent
-    redirectTo: 'auth/login'
+    redirectTo: 'auth'
   }
 ];
 @NgModule({

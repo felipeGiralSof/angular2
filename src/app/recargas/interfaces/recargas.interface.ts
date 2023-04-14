@@ -7,3 +7,8 @@ export interface Recargas {
     valor:  number;
     vendedor: string;
 }
+
+export interface Users {
+    nombre: string;
+    password?: string;
+}

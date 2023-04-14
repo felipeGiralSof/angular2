@@ -23,6 +23,7 @@ export class ListadoComponent implements OnInit {
     this.recargas$.subscribe((recargas: Recargas[]) =>{
       this.recargas = recargas;
     });
+    this.filterArray(this.recargas, this.selected);
   }
 
   filterArray(recargas: Recargas[], campo: string): void {
@@ -47,6 +48,5 @@ export class ListadoComponent implements OnInit {
     this.data = [];
     this.selected = name;
     this.filterArray(this.recargas, this.selected);
-    console.log("data", this.data);
   }
 }
